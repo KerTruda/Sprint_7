@@ -1,10 +1,6 @@
 import io.qameta.allure.Description;
 import io.qameta.allure.junit4.DisplayName;
 import io.restassured.response.Response;
-import io.restassured.response.ValidatableResponse;
-import lombok.AllArgsConstructor;
-import lombok.NoArgsConstructor;
-import lombok.RequiredArgsConstructor;
 import org.apache.http.HttpStatus;
 import org.junit.After;
 import org.junit.Before;
@@ -15,7 +11,7 @@ import ru.yandex.praktikum.models.Courier;
 import static org.junit.Assert.assertEquals;
 import static ru.yandex.praktikum.courier.CourierGenerator.*;
 import static ru.yandex.praktikum.models.CourierCreds.credsFromCourier;
-import static ru.yandex.praktikum.utils.Utils.randomString;
+
 
 
 public class CreateCourierTests {
